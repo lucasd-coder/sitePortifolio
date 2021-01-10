@@ -19,13 +19,13 @@ export const Title = styled.span`
 `;
 
 export const Content = styled.div`
-  padding: 20px;
-  width: 160px;
+  padding: 1.4rem;
+  width: 10em;
   align-items: center;
   text-align: center;
 
   p {
     margin-top: 1em;
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 `;

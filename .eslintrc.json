@@ -37,6 +37,7 @@
     ],
     "import/prefer-default-export": "off",
     "camelcase": "off",
+    "no-console": "off",
     "@typescript-eslint/ban-types": "off",
     "import/extensions": [
       "error",

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
 import {
   Content,
   HeaderPage,
@@ -17,23 +16,34 @@ const Header: React.FC = ({ children }) => {
         <IcoEmail>
           <img src={envelope} alt="icon-email" />
         </IcoEmail>
-        <Link to="/">lucasdasilva524@Hotmail.com</Link>
+        <a className="mail" href="/">
+          lucasdasilva524@Hotmail.com
+        </a>
         <NavItem>
-          <p className="home">
-            <a href="#home">Home</a>
-          </p>
-          <p>
-            <a href="#about">Sobre mim</a>
-          </p>
-          <p>
-            <a href="#skills">Habilidades</a>
-          </p>
-          <p>
-            <a href="#projects"> Projetos</a>
-          </p>
-          <p className="contact">
-            <a href="#contacts">Contato</a>
-          </p>
+          <div className="menu-toggle">
+            <div className="one" />
+            <div className="two" />
+            <div className="three" />
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">Sobre mim</a>
+              </li>
+              <li>
+                <a href="#skills">Habilidades</a>
+              </li>
+              <li>
+                <a href="#projects"> Projetos</a>
+              </li>
+              <li>
+                <a href="#contacts">Contato</a>
+              </li>
+            </ul>
+          </nav>
         </NavItem>
       </Content>
       <HeaderContent>{children}</HeaderContent>

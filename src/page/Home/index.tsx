@@ -11,12 +11,12 @@ import { DiPostgresql, DiMongodb } from 'react-icons/di';
 import { SiSpring, SiReact, SiTypescript, SiGithub } from 'react-icons/si';
 import { FaDiscord, FaJava } from 'react-icons/fa';
 
+import { Card, CardColumns, Button } from 'react-bootstrap';
 import photograph from '../../assets/icons/photograph3.png';
 import iconsRect from '../../assets/icons/React.svg';
 
 import Header from '../../components/Header';
-import Card from '../../components/Card';
-import CardProject from '../../components/CardProject';
+import Cards from '../../components/Card';
 import TypeWriter from '../../components/TypeWriter';
 
 import {
@@ -27,10 +27,9 @@ import {
   BorderIcon,
   Footer,
   About,
-  Square,
-  LinhaProject,
   TitleHabilit,
   TitleProject,
+  LinhaProject,
 } from './style';
 
 const Home: React.FC = () => {
@@ -40,7 +39,7 @@ const Home: React.FC = () => {
       <main>
         <TypeWriter
           value="Sou Programador Fullstack"
-          comeBack="Ser Programador é uma arte"
+          valas="Ser Programador é uma arte"
         />
         <About>
           <Phote>
@@ -88,184 +87,184 @@ const Home: React.FC = () => {
           As stacks que me interessa e quero aprender mais sobre
         </TitleHabilit>
         <Linha>
-          <Card>
+          <Cards>
             <BorderIcon backgroundCard="#3dc0dc">
               <CardIcon>
                 <img src={iconsRect} alt="React" />
               </CardIcon>
             </BorderIcon>
             <p>ReactJS</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#f6da3a">
               <IoLogoJavascript size={50} />
             </BorderIcon>
             <p>JavaScript</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#2965f1">
               <IoLogoCss3 size={50} />
             </BorderIcon>
             <p>CSS3</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#3178c6">
               <SiTypescript size={50} />
             </BorderIcon>
             <p>TypeScript</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#617afc">
               <SiReact size={50} />
             </BorderIcon>
             <p>React Native</p>
-          </Card>
+          </Cards>
         </Linha>
         <Linha>
-          <Card>
+          <Cards>
             <BorderIcon backgroundCard="#ebebeb">
               <FaJava size={50} color="#05738c" />
             </BorderIcon>
             <p>Java</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#8cc84b">
               <IoLogoNodejs size={50} />
             </BorderIcon>
             <p>NodeJS</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#336791">
               <DiPostgresql size={50} />
             </BorderIcon>
             <p>PostgreSQL</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#116149">
               <DiMongodb size={50} color="#13aa52" />
             </BorderIcon>
             <p>MongoDB</p>
-          </Card>
-          <Card>
+          </Cards>
+          <Cards>
             <BorderIcon backgroundCard="#fff">
               <SiSpring size={50} color="#6DB33F" />
             </BorderIcon>
             <p>Spring Boot</p>
-          </Card>
+          </Cards>
         </Linha>
 
         <TitleProject>Meus Projetos</TitleProject>
 
         <LinhaProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>Projeto-Spring</h3>
-              <p>
-                Projeto-Spring é projeto pequeno que contém o Backend com 3
-                rotas, rotas GET games e uma rota paginada records e uma única
-                rota POST records que recebe no body name, age, gameId. Esse
-                pequeno projeto tem o Backend, front-mobile, front-web.
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/Projeto-Spring"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>Api_rest_Gerencia_alunos</h3>
-              <p>
-                Uma API REST simples para consumo de dados Atividade da
-                faculdade criar um CRUD (Create Read Update Delete) para
-                consumir em um frontend
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/Api_rest_Gerencia_alunos"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>Frontend_api_rest_Gerencia_alunos</h3>
-              <p>
-                Frontend-web para consumir o Backend Api_rest_Gerencia_alunos
-                primeiro projeto ReactJS com styled-components.
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/Frontend_api_rest_Gerencia_alunos"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
-        </LinhaProject>
-        <LinhaProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>pim_unip_2020_backend</h3>
-              <p>
-                Backend feito para projeto integral multidisciplinar semestral
-                da unip, ideia é gerenciar operações de uma casa de câmbio
-                tecnologias usadas Spring-boot, Spring-security para login.
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/pim_unip_2020_backend"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>pim_2020_unip_frontend</h3>
-              <p>
-                Frontend para consumir o Backend pim_unip_2020_backend, consiste
-                em telas cadastro, login, troca de senha, listagem de produtos e
-                de realizar um pedido.
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/pim_2020_unip_frontend"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
-          <CardProject>
-            <Square backgroundCard="#fff">
-              <h3>desafio_conceitos_react_native</h3>
-              <p>
-                desafio_conceitos_react_native, consiste em desafio nos
-                conceitos de react-native no desenvolvimento mobile.
-              </p>
-
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/lucasd-coder/desafio_conceitos_react_native"
-              >
-                Visitar no Github
-              </a>
-            </Square>
-          </CardProject>
+          <CardColumns>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  Projeto-Spring
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  Projeto-Spring é projeto pequeno que contém o Backend com 3
+                  rotas, rotas GET games e uma rota paginada records e uma única
+                  rota POST records que recebe no body name, age, gameId. Esse
+                  pequeno projeto tem o Backend, front-mobile, front-web.
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/Projeto-Spring"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  Api_rest_Gerencia_alunos
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  Uma API REST simples para consumo de dados Atividade da
+                  faculdade criar um CRUD (Create Read Update Delete) para
+                  consumir em um frontend
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/Api_rest_Gerencia_alunos"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  Frontend_api_rest_Gerencia_alunos
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  Frontend-web para consumir o Backend Api_rest_Gerencia_alunos
+                  primeiro projeto ReactJS com styled-components.
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/Frontend_api_rest_Gerencia_alunos"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  pim_unip_2020_backend
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  Backend feito para projeto integral multidisciplinar semestral
+                  da unip, ideia é gerenciar operações de uma casa de câmbio
+                  tecnologias usadas Spring-boot, Spring-security para login.
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/pim_unip_2020_backend"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  pim_2020_unip_frontend
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  Frontend para consumir o Backend pim_unip_2020_backend,
+                  consiste em telas cadastro, login, troca de senha, listagem de
+                  produtos e de realizar um pedido.
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/pim_2020_unip_frontend"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title style={{ color: '#000' }}>
+                  desafio_conceitos_react_native
+                </Card.Title>
+                <Card.Text style={{ color: '#000' }}>
+                  desafio_conceitos_react_native, consiste em desafio nos
+                  conceitos de react-native no desenvolvimento mobile.
+                </Card.Text>
+                <Button
+                  target="_blank"
+                  href="https://github.com/lucasd-coder/desafio_conceitos_react_native"
+                >
+                  Visitar no Github
+                </Button>
+              </Card.Body>
+            </Card>
+          </CardColumns>
         </LinhaProject>
 
         <Footer>
@@ -288,7 +287,7 @@ const Home: React.FC = () => {
             rel="noopener noreferrer"
             href="http://linkedin.com/in/lucas-da-rocha-silva-ba736813a"
           >
-            <IoLogoLinkedin size={38} color="#fff" />
+            <IoLogoLinkedin size={40} color="#fff" />
           </a>
           <p>© 2021 - Lucas da Rocha Silva</p>
         </Footer>

@@ -16,7 +16,6 @@ export const Container = styled.div.attrs({
     max-width: 80rem;
     margin: -3.2rem auto 3.2rem;
     padding-top: 15rem;
-    overflow: hidden;
 
     h2 {
       font: 400 2rem Ubuntu;
@@ -27,7 +26,7 @@ export const Container = styled.div.attrs({
 export const About = styled.div`
   justify-content: center;
   padding-bottom: 3em;
-  width: 900px;
+  width: 90%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -78,14 +77,14 @@ export const Phote = styled.div.attrs({
   }
 `;
 export const CardIcon = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 3.2em;
+  height: 3.2em;
 `;
 
 export const BorderIcon = styled.div<BorderIcon>`
   border-radius: 10%;
-  height: 100px;
-  width: 100px;
+  height: 7em;
+  width: 7em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -96,12 +95,13 @@ export const BorderIcon = styled.div<BorderIcon>`
 `;
 
 export const Square = styled.div<BorderIcon>`
-  height: 200px;
-  width: 400px;
+  height: 12.5em;
+  width: 25em;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-right: 2em;
   ${props => css`
     background: ${props.backgroundCard};
   `}
@@ -146,11 +146,13 @@ export const Linha = styled.div`
 `;
 
 export const LinhaProject = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 `;
 
 export const Footer = styled.footer.attrs({
@@ -162,7 +164,7 @@ export const Footer = styled.footer.attrs({
   flex-direction: column;
   padding: 2em;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 10em;
   p {
     padding: 2em;
   }

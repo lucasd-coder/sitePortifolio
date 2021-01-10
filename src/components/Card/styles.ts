@@ -15,11 +15,11 @@ export const Header = styled.div`
 
 export const Title = styled.span`
   flex: 1;
-  padding: 5px;
+  padding: 0.5rem;
 `;
 
 export const Content = styled.div`
-  padding: 20px;
+  padding: 1.4rem;
   width: 160px;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,6 @@ export const Content = styled.div`
 
   p {
     margin-top: 1em;
-    font-size: 18px;
+    font-size: 1.2rem;
   }
 `;

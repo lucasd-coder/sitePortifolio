@@ -5,12 +5,16 @@ import { TypeWriterContainer } from './styles';
 
 interface TypeWriterProps {
   value: string;
-  comeBack: string;
+  valas: string;
 }
 
-const TypeWriter: React.FC<TypeWriterProps> = ({ value, comeBack }) => {
+const TypeWriter: React.FC<TypeWriterProps> = ({ value, valas }) => {
   const styleTypeWriter = `
       <strong>${value}</strong>
+  `;
+  const comeBack = `
+  <strong>${valas}</strong>
+
   `;
   return (
     <TypeWriterContainer>
