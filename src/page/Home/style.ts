@@ -53,6 +53,9 @@ export const About = styled.div`
     font: 300 1.4rem Ubuntu;
     margin: 1rem;
   }
+
+  @media (max-width: 730px) {
+  }
 `;
 
 export const Phote = styled.div.attrs({
@@ -74,6 +77,14 @@ export const Phote = styled.div.attrs({
     object-fit: cover;
     border-radius: 50%;
     transition: all 0.2s ease 0s;
+  }
+
+  @media (max-width: 730px) {
+    margin-top: 6em;
+  }
+
+  @media (max-width: 414px) {
+    margin-top: 15em;
   }
 `;
 export const CardIcon = styled.div`
@@ -146,7 +157,7 @@ export const Linha = styled.div`
 `;
 
 export const LinhaProject = styled.div`
-  width: 90%;
+  width: 80%;
   max-width: 980px;
   margin: auto;
 
@@ -178,3 +189,16 @@ export const Footer = styled.footer.attrs({
     color: #ffffff;
   }
 `;
+
+export const ContainerFliud = styled.div.attrs({
+  className: 'container-fluid mb-4',
+})``;
+
+export const RowFluid = styled.div.attrs({
+  className:
+    'row justify-content-center row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5',
+})``;
+
+export const ColMd = styled.div.attrs({
+  className: 'col mt-4',
+})``;

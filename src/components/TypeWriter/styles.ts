@@ -7,9 +7,19 @@ export const TypeWriterContainer = styled.div`
   justify-content: center;
   margin-top: 10rem;
 
+  @media (max-width: 768px) {
+    line-height: 5rem;
+    font: 400 3rem Ubuntu;
+  }
+
   @media (max-width: 730px) {
     line-height: 5rem;
     font: 300 2.2rem Ubuntu;
+  }
+
+  @media (max-width: 414px) {
+    line-height: 4rem;
+    font: 300 1.7rem Ubuntu;
   }
 
   strong {

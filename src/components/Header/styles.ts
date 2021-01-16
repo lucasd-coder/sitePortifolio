@@ -46,6 +46,7 @@ export const HeaderPage = styled.header.attrs({
       justify-content: center;
       align-items: center;
     }
+
     &.on nav {
       display: block;
     }
@@ -73,7 +74,7 @@ export const HeaderPage = styled.header.attrs({
 
     &.on nav ul a {
       transition-duration: 0.5s;
-      font-size: 2rem;
+      font-size: 1.7rem;
       line-height: 4rem;
       display: block;
     }

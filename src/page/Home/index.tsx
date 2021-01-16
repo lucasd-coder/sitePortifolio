@@ -11,7 +11,7 @@ import { DiPostgresql, DiMongodb } from 'react-icons/di';
 import { SiSpring, SiReact, SiTypescript, SiGithub } from 'react-icons/si';
 import { FaDiscord, FaJava } from 'react-icons/fa';
 
-import { Card, CardColumns, Button } from 'react-bootstrap';
+import { Card, Button, CardColumns } from 'react-bootstrap';
 import photograph from '../../assets/icons/photograph3.png';
 import iconsRect from '../../assets/icons/React.svg';
 
@@ -30,6 +30,9 @@ import {
   TitleHabilit,
   TitleProject,
   LinhaProject,
+  ContainerFliud,
+  RowFluid,
+  ColMd,
 } from './style';
 
 const Home: React.FC = () => {
@@ -87,70 +90,92 @@ const Home: React.FC = () => {
           As stacks que me interessa e quero aprender mais sobre
         </TitleHabilit>
         <Linha>
-          <Cards>
-            <BorderIcon backgroundCard="#3dc0dc">
-              <CardIcon>
-                <img src={iconsRect} alt="React" />
-              </CardIcon>
-            </BorderIcon>
-            <p>ReactJS</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#f6da3a">
-              <IoLogoJavascript size={50} />
-            </BorderIcon>
-            <p>JavaScript</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#2965f1">
-              <IoLogoCss3 size={50} />
-            </BorderIcon>
-            <p>CSS3</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#3178c6">
-              <SiTypescript size={50} />
-            </BorderIcon>
-            <p>TypeScript</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#617afc">
-              <SiReact size={50} />
-            </BorderIcon>
-            <p>React Native</p>
-          </Cards>
-        </Linha>
-        <Linha>
-          <Cards>
-            <BorderIcon backgroundCard="#ebebeb">
-              <FaJava size={50} color="#05738c" />
-            </BorderIcon>
-            <p>Java</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#8cc84b">
-              <IoLogoNodejs size={50} />
-            </BorderIcon>
-            <p>NodeJS</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#336791">
-              <DiPostgresql size={50} />
-            </BorderIcon>
-            <p>PostgreSQL</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#116149">
-              <DiMongodb size={50} color="#13aa52" />
-            </BorderIcon>
-            <p>MongoDB</p>
-          </Cards>
-          <Cards>
-            <BorderIcon backgroundCard="#fff">
-              <SiSpring size={50} color="#6DB33F" />
-            </BorderIcon>
-            <p>Spring Boot</p>
-          </Cards>
+          <ContainerFliud>
+            <RowFluid>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#3dc0dc">
+                    <CardIcon>
+                      <img src={iconsRect} alt="React" />
+                    </CardIcon>
+                  </BorderIcon>
+                  <p>ReactJS</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#f6da3a">
+                    <IoLogoJavascript size={50} />
+                  </BorderIcon>
+                  <p>JavaScript</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#2965f1">
+                    <IoLogoCss3 size={50} />
+                  </BorderIcon>
+                  <p>CSS3</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#3178c6">
+                    <SiTypescript size={50} />
+                  </BorderIcon>
+                  <p>TypeScript</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#617afc">
+                    <SiReact size={50} />
+                  </BorderIcon>
+                  <p>React Native</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#ebebeb">
+                    <FaJava size={50} color="#05738c" />
+                  </BorderIcon>
+                  <p>Java</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#8cc84b">
+                    <IoLogoNodejs size={50} />
+                  </BorderIcon>
+                  <p>NodeJS</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#336791">
+                    <DiPostgresql size={50} />
+                  </BorderIcon>
+                  <p>PostgreSQL</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#116149">
+                    <DiMongodb size={50} color="#13aa52" />
+                  </BorderIcon>
+                  <p>MongoDB</p>
+                </Cards>
+              </ColMd>
+              <ColMd>
+                <Cards>
+                  <BorderIcon backgroundCard="#fff">
+                    <SiSpring size={50} color="#6DB33F" />
+                  </BorderIcon>
+                  <p>Spring Boot</p>
+                </Cards>
+              </ColMd>
+            </RowFluid>
+          </ContainerFliud>
         </Linha>
 
         <TitleProject>Meus Projetos</TitleProject>
