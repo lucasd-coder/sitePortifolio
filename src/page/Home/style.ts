@@ -53,9 +53,6 @@ export const About = styled.div`
     font: 300 1.4rem Ubuntu;
     margin: 1rem;
   }
-
-  @media (max-width: 730px) {
-  }
 `;
 
 export const Phote = styled.div.attrs({

@@ -7,7 +7,7 @@ export const HeaderPage = styled.header.attrs({
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: #212121;
+  background: #09090a;
 
   @media (max-width: 730px) {
     nav {
@@ -35,7 +35,7 @@ export const HeaderPage = styled.header.attrs({
     &.on {
       position: absolute;
       top: 0;
-      background: #212121;
+      background: #09090a;
       left: 0;
       width: 100vw;
       height: 100vh;
