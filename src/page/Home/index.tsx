@@ -29,8 +29,8 @@ import {
   About,
   TitleHabilit,
   TitleProject,
-  LinhaProject,
   ContainerFliud,
+  LinhaProject,
   RowFluid,
   ColMd,
 } from './style';
