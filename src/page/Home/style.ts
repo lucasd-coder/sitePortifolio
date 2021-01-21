@@ -80,9 +80,9 @@ export const Phote = styled.div.attrs({
     margin-top: 6em;
   }
 
-  @media (max-width: 414px) {
+  /* @media (max-width: 414px) {
     margin-top: 15em;
-  }
+  } */
 `;
 export const CardIcon = styled.div`
   width: 3.2em;
@@ -159,10 +159,6 @@ export const LinhaProject = styled.div`
   margin: auto;
   flex-wrap: wrap;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-
   @media (min-width: 34em) {
     .card-columns {
       -webkit-column-count: 1;
@@ -181,9 +177,9 @@ export const LinhaProject = styled.div`
 
   @media (min-width: 62em) {
     .card-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2;
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
     }
   }
 

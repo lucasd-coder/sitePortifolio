@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Button } from 'react-bootstrap';
 import {
   Content,
   HeaderPage,
@@ -19,6 +20,11 @@ const Header: React.FC = ({ children }) => {
         <a className="mail" href="/">
           lucasdasilva524@Hotmail.com
         </a>
+
+        <Button className="navbar-toggler" type="button" data-toggle="collapse">
+          <span className="navbar-toggler-icon" />
+        </Button>
+
         <NavItem>
           <div className="menu-toggle">
             <div className="one" />

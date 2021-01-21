@@ -28,7 +28,6 @@ export const HeaderPage = styled.header.attrs({
     .menu-toggle {
       width: 40px;
       height: 30px;
-      margin-right: 20px;
     }
 
     /* fullscreen */
@@ -38,7 +37,6 @@ export const HeaderPage = styled.header.attrs({
       background: #09090a;
       left: 0;
       width: 100vw;
-      height: 100vh;
 
       z-index: 10;
 
@@ -155,7 +153,6 @@ export const NavItem = styled.div`
   text-align: center;
   justify-content: center;
   margin: 3em;
-  margin-right: 5em;
 
   nav ul {
     display: flex;
