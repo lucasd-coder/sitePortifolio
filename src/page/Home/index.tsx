@@ -15,7 +15,7 @@ import { Card, Button, CardColumns } from 'react-bootstrap';
 import photograph from '../../assets/icons/photograph3.png';
 import iconsRect from '../../assets/icons/React.svg';
 
-import Cards from '../../components/Card';
+// import Cards from '../../components/Card';
 import TypeWriter from '../../components/TypeWriter';
 
 import {
@@ -33,7 +33,7 @@ import {
   RowFluid,
   ColMd,
 } from './style';
-import Header from '../../components/HeaderCopy';
+import Header from '../../components/Header';
 
 const Home: React.FC = () => {
   return (
@@ -93,86 +93,86 @@ const Home: React.FC = () => {
           <ContainerFliud>
             <RowFluid>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#3dc0dc">
                     <CardIcon>
                       <img src={iconsRect} alt="React" />
                     </CardIcon>
                   </BorderIcon>
                   <p>ReactJS</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#f6da3a">
                     <IoLogoJavascript size={50} />
                   </BorderIcon>
                   <p>JavaScript</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#2965f1">
                     <IoLogoCss3 size={50} />
                   </BorderIcon>
                   <p>CSS3</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#3178c6">
                     <SiTypescript size={50} />
                   </BorderIcon>
                   <p>TypeScript</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#617afc">
                     <SiReact size={50} />
                   </BorderIcon>
                   <p>React Native</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#ebebeb">
                     <FaJava size={50} color="#05738c" />
                   </BorderIcon>
                   <p>Java</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#8cc84b">
                     <IoLogoNodejs size={50} />
                   </BorderIcon>
                   <p>NodeJS</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#336791">
                     <DiPostgresql size={50} />
                   </BorderIcon>
                   <p>PostgreSQL</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#116149">
                     <DiMongodb size={50} color="#13aa52" />
                   </BorderIcon>
                   <p>MongoDB</p>
-                </Cards>
+                </Card>
               </ColMd>
               <ColMd>
-                <Cards>
+                <Card>
                   <BorderIcon backgroundCard="#fff">
                     <SiSpring size={50} color="#6DB33F" />
                   </BorderIcon>
                   <p>Spring Boot</p>
-                </Cards>
+                </Card>
               </ColMd>
             </RowFluid>
           </ContainerFliud>

@@ -22,6 +22,11 @@ export const TypeWriterContainer = styled.div`
     font: 300 1.7rem Ubuntu;
   }
 
+  @media (max-width: 360px) {
+    line-height: 4rem;
+    font: 300 1.5rem Ubuntu;
+  }
+
   strong {
     font-weight: 500;
   }

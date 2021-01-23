@@ -21,6 +21,20 @@ export const Container = styled.div.attrs({
       font: 400 2rem Ubuntu;
       margin: 3em;
     }
+
+    @media (max-width: 414px) {
+      h2 {
+        font: 400 2rem Ubuntu;
+        margin: 2em;
+      }
+    }
+
+    @media (max-width: 360px) {
+      h2 {
+        font: 400 1.8rem Ubuntu;
+        margin: 1.5em;
+      }
+    }
   }
 `;
 export const About = styled.div`
@@ -53,6 +67,31 @@ export const About = styled.div`
     font: 300 1.4rem Ubuntu;
     margin: 1rem;
   }
+
+  @media (max-width: 730px) {
+    margin-top: 10rem;
+
+    p {
+      font: 300 1.2rem Ubuntu;
+      padding: 1rem;
+    }
+
+    span {
+      font: 300 1.2rem Ubuntu;
+    }
+  }
+
+  @media (max-width: 414px) {
+    span {
+      font: 300 1rem Ubuntu;
+    }
+  }
+
+  @media (max-width: 360px) {
+    span {
+      font: 300 1rem Ubuntu;
+    }
+  }
 `;
 
 export const Phote = styled.div.attrs({
@@ -79,10 +118,6 @@ export const Phote = styled.div.attrs({
   @media (max-width: 730px) {
     margin-top: 6em;
   }
-
-  /* @media (max-width: 414px) {
-    margin-top: 15em;
-  } */
 `;
 export const CardIcon = styled.div`
   width: 3.2em;
@@ -227,4 +262,15 @@ export const RowFluid = styled.div.attrs({
 
 export const ColMd = styled.div.attrs({
   className: 'col mt-4',
-})``;
+})`
+  .card {
+    background-color: unset;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+`;
