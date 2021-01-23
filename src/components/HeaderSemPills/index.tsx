@@ -10,7 +10,7 @@ import {
 } from './styles';
 import envelope from '../../assets/icons/icon-email.svg';
 
-const Header: React.FC = ({ children }) => {
+const HeaderSemPills: React.FC = ({ children }) => {
   return (
     <HeaderPage>
       <Content>
@@ -43,7 +43,7 @@ const Header: React.FC = ({ children }) => {
                 <a href="#skills">Habilidades</a>
               </li>
               <li>
-                <a href="#projects"> Projetos</a>
+                <a href="#projects">Projetos</a>
               </li>
               <li>
                 <a href="#contacts">Contato</a>
@@ -57,4 +57,4 @@ const Header: React.FC = ({ children }) => {
   );
 };
 
-export default Header;
+export default HeaderSemPills;

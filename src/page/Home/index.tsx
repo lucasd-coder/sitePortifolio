@@ -15,7 +15,6 @@ import { Card, Button, CardColumns } from 'react-bootstrap';
 import photograph from '../../assets/icons/photograph3.png';
 import iconsRect from '../../assets/icons/React.svg';
 
-import Header from '../../components/Header';
 import Cards from '../../components/Card';
 import TypeWriter from '../../components/TypeWriter';
 
@@ -34,6 +33,7 @@ import {
   RowFluid,
   ColMd,
 } from './style';
+import Header from '../../components/HeaderCopy';
 
 const Home: React.FC = () => {
   return (

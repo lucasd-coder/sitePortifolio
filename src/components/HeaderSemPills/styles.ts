@@ -84,7 +84,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 2em;
+  /* margin-top: 2em; */
   transition: all 0.2s;
 
   .mail {
@@ -152,7 +152,7 @@ export const NavItem = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
-  margin: 3em;
+  margin: 4em;
 
   nav ul {
     display: flex;
