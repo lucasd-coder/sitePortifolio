@@ -5,6 +5,12 @@ export const HeaderPage = styled.header`
     padding: 0.9rem 4rem;
   }
 
+  .mail {
+    text-decoration: none;
+    color: #fff;
+    font: 300 1.2rem Ubuntu;
+  }
+
   nav {
     background: #09090a;
 

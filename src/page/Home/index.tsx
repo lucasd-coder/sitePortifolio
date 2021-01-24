@@ -15,7 +15,6 @@ import { Card, Button, CardColumns } from 'react-bootstrap';
 import photograph from '../../assets/icons/photograph3.png';
 import iconsRect from '../../assets/icons/React.svg';
 
-// import Cards from '../../components/Card';
 import TypeWriter from '../../components/TypeWriter';
 
 import {
@@ -41,7 +40,7 @@ const Home: React.FC = () => {
       <Header />
       <main>
         <TypeWriter
-          value="Sou Programador Fullstack"
+          value="Sou Programador Fullstack junior"
           valas="Ser Programador é uma arte"
         />
         <About>

@@ -193,6 +193,9 @@ export const LinhaProject = styled.div`
   max-width: 980px;
   margin: auto;
   flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 34em) {
     .card-columns {

@@ -28,7 +28,7 @@ const TypeWriter: React.FC<TypeWriterProps> = ({ value, valas }) => {
             .pauseFor(2500)
             .typeString(styleTypeWriter)
             .pauseFor(300)
-            .deleteChars(29)
+            .deleteChars(36)
             .typeString(comeBack)
             .pauseFor(2500)
             .start();
