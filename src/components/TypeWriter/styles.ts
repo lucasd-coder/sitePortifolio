@@ -15,6 +15,7 @@ export const TypeWriterContainer = styled.div`
   @media (max-width: 730px) {
     line-height: 5rem;
     font: 300 2rem Ubuntu;
+    margin-top: 3rem;
   }
 
   @media (max-width: 414px) {
