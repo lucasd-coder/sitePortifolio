@@ -5,10 +5,10 @@ export const TypeWriterContainer = styled.div`
   font: 500 3.7rem Ubuntu;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
 
   @media (max-width: 768px) {
-    line-height: 5rem;
+    line-height: 4rem;
     font: 400 2.7rem Ubuntu;
   }
 
