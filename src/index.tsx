@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './menu';
+// import './menu';
 
 ReactDOM.render(
   <React.StrictMode>

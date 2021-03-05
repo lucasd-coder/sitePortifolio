@@ -38,7 +38,6 @@ export const Container = styled.div.attrs({
   }
 `;
 export const About = styled.div`
-  justify-content: center;
   padding-bottom: 3em;
   width: 90%;
   align-items: center;
