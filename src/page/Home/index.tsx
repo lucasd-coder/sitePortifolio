@@ -299,11 +299,7 @@ const Home: React.FC = () => {
           >
             <SiGithub size={35} />
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://discord.gg/F7nfTWKj"
-          >
+          <a target="_blank" rel="noopener noreferrer" href="lucasdasilva#5268">
             <FaDiscord size={35} color="#fff" />
           </a>
           <a
