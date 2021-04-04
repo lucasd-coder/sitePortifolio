@@ -8,7 +8,6 @@ const Header: React.FC = ({ children }) => {
   return (
     <HeaderPage>
       <Navbar
-        className="pt-5 pb-5"
         collapseOnSelect
         expand="lg"
         variant="dark"
