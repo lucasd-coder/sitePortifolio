@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Desenvolvedor Backend</title>
+    <!-- Incluir Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8">
+      <!-- Seção de Cabeçalho/Introdução -->
+      <header
+        class="text-center py-12 mb-12 bg-gradient-to-r from-blue-700 to-indigo-800 rounded-xl shadow-lg"
+      >
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">
+          Lucas Da Rocha Silva
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-200">Desenvolvedor Backend</p>
+        <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+          Apaixonado por construir sistemas robustos, escaláveis e eficientes,
+          focando na lógica de negócios e na integridade dos dados.
+        </p>
+        <div class="mt-8 flex justify-center space-x-6">
+          <a
+            href="#projetos"
+            class="bg-white text-blue-800 font-semibold py-3 px-8 rounded-full shadow-md hover:bg-gray-200 transition duration-300"
+            >Meus Projetos</a
+          >
+          <a
+            href="#contato"
+            class="bg-blue-800 text-white font-semibold py-3 px-8 rounded-full border border-white hover:bg-blue-900 transition duration-300"
+            >Entre em Contato</a
+          >
+        </div>
+      </header>
+
+      <!-- Seção Sobre Mim -->
+      <section id="sobre" class="mb-16">
+        <h2 class="text-4xl font-bold section-heading mb-8">Sobre Mim</h2>
+        <div class="card text-lg leading-relaxed">
+          <p class="mb-4">
+            Desenvolvedor de Software com experiência em backend, atuando desde
+            2018 em projetos que abrangem desde o desenvolvimento de aplicações
+            do zero até a manutenção e evolução de sistemas em produção. Minha
+            base sólida em tecnologias modernas, combinada com a prática de
+            DevOps e a criação de arquiteturas escaláveis, me permite focar em
+            soluções que entregam valor real ao negócio. Tenho proficiência em
+            linguagens como Java (com Spring Boot) e Golang, além de experiência
+            em TypeScript (Node.js) para APIs de alta performance. Atualmente,
+            estou expandindo meus conhecimentos com Rust, explorando seu
+            potencial para aplicações robustas e eficientes.
+          </p>
+          <p class="mb-4">
+            Sou apaixonado por projetar sistemas resilientes, com foco em
+            arquiteturas de microsserviços, camadas e Onion Architecture,
+            garantindo modularidade, escalabilidade e uma clara separação de
+            responsabilidades. Minha expertise abrange o uso de bancos de dados
+            relacionais como PostgreSQL e NoSQL como MongoDB, Redis e Cassandra.
+            No contexto de escalabilidade e DevOps, sou proficiente na
+            configuração e manutenção de pipelines CI/CD, deployments em
+            Kubernetes, automação com Terraform e monitoramento de performance
+            com OpenTelemetry.
+          </p>
+          <p class="mb-4">
+            Adoto metodologias ágeis como Scrum, participando ativamente de
+            todos os ritos para garantir a melhoria contínua e a entrega
+            eficiente. Aplico rigorosamente conceitos de TDD, SOLID e modelagem
+            UML para estruturar soluções bem planejadas e testáveis. Também
+            possuo familiaridade com Docker, Docker Compose, GraalVM e diversas
+            ferramentas de teste como JUnit, testify, Jest e SuperTest.
+          </p>
+          <p class="mb-4">
+            Atualmente, além de minha atuação profissional, estou aprofundando
+            meu conhecimento em desenvolvimento sustentável de software e
+            explorando novas tecnologias para criar soluções eficientes e de
+            impacto.
+          </p>
+          <p>
+            <span class="font-semibold">Resumo:</span> Minha trajetória é
+            marcada por um compromisso constante com aprendizado, colaboração e
+            entrega de software de qualidade. Estou em busca de oportunidades
+            para contribuir e crescer em projetos desafiadores e inovadores.
+          </p>
+        </div>
+      </section>
+
+      <!-- Seção de Habilidades -->
+      <section id="habilidades" class="mb-16">
+        <h2 class="text-4xl font-bold section-heading mb-8">
+          Minhas Habilidades
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-400">
+              Linguagens
+            </h3>
+            <ul class="list-disc list-inside text-lg space-y-2">
+              <li>Python</li>
+              <li>Java</li>
+              <li>Node.js (JavaScript/TypeScript)</li>
+              <li>Go</li>
+              <li>Rust</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-400">
+              Frameworks & Ferramentas
+            </h3>
+            <ul class="list-disc list-inside text-lg space-y-2">
+              <li>Spring Boot</li>
+              <li>Actix Web</li>
+              <li>Nest.js</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Git / GitHub / GitLab</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="text-2xl font-semibold mb-4 text-blue-400">
+              Bancos de Dados & Cloud
+            </h3>
+            <ul class="list-disc list-inside text-lg space-y-2">
+              <li>PostgreSQL, MySQL</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>AWS</li>
+              <li>Google Cloud Platform</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Projetos -->
+      <section id="projetos" class="mb-16">
+        <h2 class="text-4xl font-bold section-heading mb-8">
+          Projetos Destacados
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Projeto 1 -->
+          <div class="project-card">
+            <h3 class="text-2xl font-semibold mb-3 text-blue-400">
+              Sistema de Gerenciamento de Pedidos
+            </h3>
+            <p class="text-lg text-gray-300 mb-4">
+              Uma API robusta para gerenciamento de pedidos e estoque,
+              desenvolvida com Spring Boot e PostgreSQL. Inclui autenticação
+              JWT, tratamento de erros e testes unitários/de integração.
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+              <span class="bg-gray-700 px-3 py-1 rounded-full">Java</span>
+              <span class="bg-gray-700 px-3 py-1 rounded-full"
+                >Spring Boot</span
+              >
+              <span class="bg-gray-700 px-3 py-1 rounded-full">PostgreSQL</span>
+              <span class="bg-gray-700 px-3 py-1 rounded-full">REST API</span>
+            </div>
+            <div class="mt-6 flex justify-end">
+              <a
+                href="#"
+                class="text-blue-400 hover:underline flex items-center"
+              >
+                Ver Código
+                <svg
+                  class="ml-2 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-10 10m0-10l10 10"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card">
+            <h3 class="text-2xl font-semibold mb-3 text-blue-400">
+              Serviço de Autenticação com Microserviços
+            </h3>
+            <p class="text-lg text-gray-300 mb-4">
+              Desenvolvimento de um serviço de autenticação desacoplado
+              utilizando Node.js, Express.js e MongoDB, com integração a um
+              gateway de API para gerenciamento de tráfego.
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm text-gray-400">
+              <span class="bg-gray-700 px-3 py-1 rounded-full">Node.js</span>
+              <span class="bg-gray-700 px-3 py-1 rounded-full">Express.js</span>
+              <span class="bg-gray-700 px-3 py-1 rounded-full">MongoDB</span>
+              <span class="bg-gray-700 px-3 py-1 rounded-full"
+                >Microservices</span
+              >
+            </div>
+            <div class="mt-6 flex justify-end">
+              <a
+                href="#"
+                class="text-blue-400 hover:underline flex items-center"
+              >
+                Ver Código
+                <svg
+                  class="ml-2 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0l-10 10m0-10l10 10"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Adicionar mais projetos aqui conforme necessário -->
+        </div>
+      </section>
+
+      <!-- Seção de Contato -->
+      <section id="contato" class="mb-16">
+        <h2 class="text-4xl font-bold section-heading mb-8">
+          Entre em Contato
+        </h2>
+        <div class="card text-center">
+          <p class="text-lg mb-6">
+            Interessado em colaborar ou apenas trocar uma ideia? Ficarei feliz
+            em ouvir de você!
+          </p>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a
+              href="mailto:lucasdasilva524@hotmail.com"
+              target="_blank"
+              class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                ></path>
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                ></path>
+              </svg>
+              lucasdasilva524@hotmail.com
+            </a>
+            <a
+              href="http://linkedin.com/in/lucas-da-rocha-silva-ba736813a"
+              target="_blank"
+              class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/lucasd-coder"
+              target="_blank"
+              class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300 flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.95.174 1.293-.443 1.293-.984 0-.484-.017-1.637-.027-3.22-.357.779-.861 1.699-1.996 2.042-.942.274-1.144-.457-1.144-.823-1.077-.145-1.85-.529-2.672-1.393-.277-.42-.686-1.32-.999-1.62-.256-.248-.771-.911-.044-.928.65-.015 1.171.662 1.332.943.722 1.233 1.942.883 2.416.671.071-.523.284-.91.518-1.118-1.854-.209-3.792-.923-3.792-4.116 0-.911.323-1.656.85-2.24-.084-.21-.369-1.058.082-2.204 0 0 .695-.224 2.272.857.661-.183 1.365-.274 2.069-.277.703.003 1.407.094 2.069.277 1.577-1.081 2.272-.857 2.272-.857.452 1.146.167 1.994.082 2.204.527.584.85 1.33.85 2.24 0 3.195-1.94 3.903-3.805 4.111.29.25.545.735.545 1.48v2.181c0 .546.342 1.174 1.303.982 4.766-1.586 8.203-6.084 8.203-11.385 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="text-center py-8 text-gray-500 text-sm">
+        &copy; <span id="current-year"></span> Lucas. Todos os direitos
+        reservados.
+      </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>
